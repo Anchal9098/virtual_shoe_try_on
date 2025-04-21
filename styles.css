@@ -1,9 +1,10 @@
+
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
+  background: linear-gradient(120deg, #a1ffce, #faffd1, #fbc2eb);
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
