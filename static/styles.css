@@ -1,0 +1,155 @@
+body {
+  background-color: #fffde3;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Align text and form vertically */
+  overflow-x: hidden;
+}
+
+.gradient-circle {
+  position: absolute;
+  width: 900px;
+  height: 600px;
+  background: radial-gradient(circle, #b2ff59 0%, transparent 70%);
+  right: 0;
+  top: 150px;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.circle-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 60%;
+  max-height: 65%;
+  z-index: 1;
+}
+
+.hero-section {
+  max-width: 500px;
+  padding: 40px;
+  position: absolute;
+  left: 30px;
+  top: 200px;
+}
+
+h1 {
+  font-size: 48px;
+  color: #0a0a23;
+  margin: 0 0 30px 0;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.cta-button {
+  background-color: #b2ff59;
+  border: none;
+  color: black;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #9dff00;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 40px;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.nav-links a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.user-icon {
+  font-size: 24px;
+  cursor: pointer;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-container {
+  padding: 20px;
+  border: 1px solid #ccc;
+  width: 300px;
+  text-align: center;
+  
+}
+
+p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+}
+
+.form-container input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-container button {
+  width: 70%;
+  padding: 12px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+  background-color: #45a049;
+}
+
+.form-container p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.form-container p a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.form-container p a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .form-container {
+      width: 100%;
+      padding: 20px;
+  }
+}

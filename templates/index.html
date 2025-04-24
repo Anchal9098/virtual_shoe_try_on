@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Virtual Shoe Try-On</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <div class="gradient-circle">
+        <img src="{{ url_for('static', filename='website_shoe.png') }}" class="circle-image" alt="image">
+    </div>
+
+    <div class="hero-section">
+        <h1>Introducing<br>Virtual Shoe Try On</h1>
+        <button class="cta-button" onclick="startTryOn()">Try It Now</button>
+    </div>
+
+    <div class="navbar">
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="login">Login</a>
+            <a href="#">Signup</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="user-icon">👤</div>
+    </div>
+
+    <script>
+        function startTryOn() {
+            fetch('/start-tryon')
+                .then(response => response.text())
+                .then(data => alert(data));
+        }
+    </script>
+    
+</body>
+</html>
